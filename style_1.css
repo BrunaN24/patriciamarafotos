@@ -1,0 +1,12 @@
+div{
+    display: inline-block;
+}
+
+.logo-cabecalho{
+    width: 420%;
+   position: relative;
+  top: 20%;
+  left: 10%;
+     right: 50%;
+      background-size: 500%;
+}

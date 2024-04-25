@@ -1,0 +1,175 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background: grey;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.btn{
+  position: relative;
+   bottom: 120px;
+  display: grid;
+  color: Silver;
+  font-size: 16px;
+  font-family: Futura;
+  text-decoration: none;
+  margin: 0 15px;
+  border: 0px solid #D3D3D3;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+  text-align: center;
+  border-radius: 20px;
+  
+}
+.btn::before{
+  background: white;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}
+
+
+
+              
+              
+              
+
+
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+}
+
+.gallery {
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.gallery__img {
+  scroll-snap-align: start;
+  margin-bottom: 10px;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.lil-nav {
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  a {
+    height: 200px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+}
+
+.lil-nav__img {
+  object-fit: cover;
+  filter: saturate(0);
+  transition: 0.3s ease all;
+
+  &:hover {
+    transform: scale(1.05);
+    filter: saturate(1);
+  }
+}
+
+
+.logo-cabecalho {
+
+}
+
+
+.hero-heading-center{
+    object-fit: fill;
+    background-color: #f5f7fa;
+    border-bottom: 1px solid #e4ebf3;
+    padding: 80px 30px;
+    position:relative;
+   
+    
+}
+
+.containerr{
+    width: 100%;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.centered-heading{
+    text-align: center;
+    margin-bottom: 16px;
+    
+}
+
+.centered-heading margin-bottom-32px{
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 25px;
+   
+}
+
+.hero-wraper{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+   
+}
+
+.hero-split{
+    max-width: 46%;
+    grid-column-end: 55px;
+    grid-row-end: 55px; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+   
+    
+}
+
+.margin-bottom-24px{
+   margin-bottom: 45px;
+   font-family: Candara;
+  
+}
+
+.rodape{
+    text-align: center;
+    font-family: sans-serif;
+}
